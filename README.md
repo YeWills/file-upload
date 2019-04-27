@@ -15,6 +15,9 @@ npm start
 * 前端如何使用ajax进行异步文件上传(ajax_static\ajax_index.html)
 * 拖拽文件上传(drap_file\dragInfo.html)
 
+## 通过form包裹来上传的demo
+[通过form包裹来上传的demo](https://github.com/YeWills/koa-demo/tree/upload-file)
+
 ## 知识点
 
 ### type=text input 获取file的三种方式：
@@ -100,3 +103,5 @@ dragover
 dragleave
 drop
 ```
+
+参考[File upload demo](https://github.com/hongchh/file-upload-demo)
