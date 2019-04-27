@@ -5,7 +5,7 @@
 * NodeJS express服务端如何处理文件上传
 
 项目启动
-```bash
+```
 npm install
 npm start
 ```
@@ -86,6 +86,11 @@ $.ajax({
     <input type='submit' value='提交'/>
  </form>
 ```
+### multer与文件上传
+express，收到前台的上传请求后，因为上传文件的请求时一个多类型文件数据(multipart/form-data)请求，
+必须通过require('multer')才能正常处理这样的请求。
+multer就是为了 处理多文件接口而生。
+
 ### 上传技术说明
 FileReader 实现图片预览
 通过FormData将file表格序列化，这样才能被post框架接收为参数，传给后台，并被后台识别；
@@ -95,6 +100,7 @@ FileReader 实现图片预览
 xhr.onload = uploadSuccess; //成功处理
 xhr.upload.onprogress = setProgress;  //进度处理
 ```
+后台express，收到前台的上传请求后，通过中间件multer处理后，通过fs读取数据，并将上传的文件存到指定文件夹(/uploads)，整个上传过程结束。
 
 ### 其他技术点
 ```
