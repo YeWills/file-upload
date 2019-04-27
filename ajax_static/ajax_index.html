@@ -8,7 +8,7 @@
 </head>
 <body>
 <form class="form-horizontal" enctype='multipart/form-data' method='post' action='javascript:;'>
-    <input type="file" id="choose"/>
+    <input type="file" id="chooseFile"/>
     <button onclick="handle()">上传</button>
     <img class="newImg"/>
 </form>
@@ -16,7 +16,7 @@
 <script>
 
     function handle() {
-        let file = document.getElementById("choose").files[0];
+        let file = document.getElementById("chooseFile").files[0];
         let formData = new FormData();
         formData.append("avatar", file);
         $.ajax({
