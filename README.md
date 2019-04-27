@@ -15,8 +15,9 @@ npm start
 * 前端如何使用ajax进行异步文件上传(ajax_static\ajax_index.html)
 * 拖拽文件上传(drap_file\dragInfo.html)
 
-## 通过form包裹来上传的demo
-[通过form包裹来上传的demo](https://github.com/YeWills/koa-demo/tree/upload-file)
+## 通过form文件上传的demo
+可以通过form自带的action，配合field的name来获取数据，直接向后台发起请求，不用写ajax请求。
+[通过form文件上传的demo](https://github.com/YeWills/koa-demo/tree/upload-file)
 
 ## 知识点
 
