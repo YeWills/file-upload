@@ -21,9 +21,9 @@
   }
 
   // 成功上传
-  function uploadSuccess(event) {
-    if (xhr.readyState === 4) {
-      console.log(xhr.responseText);
+  function uploadSuccess(ProgressEvent) {
+    if (ProgressEvent.target.readyState === 4) {
+      console.log(ProgressEvent.target.responseText);
     }
   }
 

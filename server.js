@@ -9,9 +9,6 @@ let  app = express();
 app.set('port', port);
 app.use(express.static(path.join(__dirname, 'static')));
 
-app.get('*', (req, res) => {
-  res.redirect('eee.html');
-});
 
 app.post('/upload', upload.single('test-upload'), (req, res) => {
   // 没有附带文件
